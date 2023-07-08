@@ -35,9 +35,9 @@ def main():
         )
 
     folium.GeoJson(
-        load_shapefile(year, origin="Ours"),
+        load_shapefile(year, origin="AttUNet"),
         style_function=lambda x: style,
-        name="Deforestation"
+        name="AttUNet Deforestation"
     ).add_to(m)
 
     folium.GeoJson(
